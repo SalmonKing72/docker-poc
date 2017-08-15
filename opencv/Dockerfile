@@ -21,7 +21,6 @@ RUN unzip 2.4.13.3.zip \
 	&& cd build \
 	&& cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local .. \
 	&& make \
-	&& make install
-	
-#&& cd \
-#&& rm 2.4.13.3.zip
+	&& make install \
+    && cd / \
+    && rm 2.4.13.3.zip
